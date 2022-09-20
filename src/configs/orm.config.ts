@@ -28,8 +28,9 @@ function ormConfig(): TypeOrmModuleOptions {
     migrationsRun: commonConf.MIGRATIONS_RUN,
   }
   
+  console.log('process.env.NODE_ENV : ', process.env.NODE_ENV)
   console.log('process.env.DB_HOST : ', process.env.DB_HOST)
-
+  
   return databaseConfig;
 }
 
